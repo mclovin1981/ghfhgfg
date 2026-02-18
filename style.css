@@ -4945,284 +4945,841 @@ footer {
 
 
 
-/* Исправление для блоков с фиксированной шириной */
-@media (max-width: 768px) {
-    /* Исправление для блока истории */
-    .block_black {
-        width: 90% !important; /* Заменяем фиксированную ширину на относительную */
-        left: 50%;
-        transform: translateX(-50%);
-        height: auto;
-        min-height: 500px;
-        padding: 20px 15px;
-        position: absolute;
-        top: 100vh;
-        margin-top: 50px; /* Уменьшаем отступ */
-    }
-    
-    /* Исправление для карты */
-    .hero_blur_small {
-        width: 100% !important; /* Было 1703px */
-        min-height: 450px;
-        margin: 0 auto 40px;
-        border-radius: 12px;
-    }
-    
-    /* Исправление для блока с иконками в истории */
-    .icons_icon {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    /* Исправление для текста в истории */
-    .text_info {
-        margin-top: 20px;
-    }
-    
-    /* Исправление для транспорта */
-    .line_tr {
-        width: 90% !important; /* Было 436px */
-        margin: 0 auto;
-    }
-    
-    /* Исправление для фотографий в спорт секции */
-    .photo_g-drive,
-    .photo_transport {
+/* ===== АДАПТАЦИЯ ДЛЯ СМАРТФОНОВ 400px ===== */
+@media (max-width: 400px) {
+    /* Глобальные исправления */
+    body {
+        overflow-x: hidden;
         width: 100%;
-        height: auto;
-        max-height: 250px;
-        object-fit: cover;
     }
     
-    /* Исправление для названия G-Drive */
-    .g {
-        font-size: 28px;
+    .wrapper, .wrapper-contant {
+        padding: 0 10px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
-    /* Исправление для описания в спорт секции */
-    .discription_drive {
-        font-size: 16px;
+    /* Исправление шапки и бургер меню */
+    .header {
+        width: 95%;
+        height: 55px;
+        padding: 5px 10px;
+        top: 10px;
     }
     
-    /* Исправление для кнопки матчей */
-    .matches {
-        width: 100% !important; /* Было 428px */
+    .logo {
+        width: 60px;
+        height: 30px;
     }
     
-    /* Исправление для блока образования */
-    .block_blue {
-        width: 100% !important; /* Было 793px */
-        padding: 15px;
+    .burger-menu {
+        width: 30px;
+        height: 30px;
+        left: 45%;
     }
     
-    /* Исправление для университетов */
-    .block_universities {
-        width: 100% !important; /* Было 795px */
+    .burger-line {
+        height: 2px;
+    }
+    
+    .nav {
+        width: 280px;
+        min-height: 400px;
+        top: 70px;
+        right: -100%;
         padding: 20px;
     }
     
-    /* Исправление для линии в университетах */
-    .line {
-        width: 100% !important; /* Было 692.5px */
+    .nav.active {
+        right: 10px;
     }
     
-    /* Исправление для научных достижений */
-    .block_Scientific_achievements {
-        width: 100% !important; /* Было 795px */
+    .nav a {
+        font-size: 24px;
+        margin: 10px 0;
+        padding-bottom: 20px;
     }
     
-    /* Исправление для отступов в контейнере спорта */
-    .sports {
-        margin-left: 0;
-        padding: 0 15px;
+    .tem {
+        width: 35px;
+        height: 35px;
     }
     
-    /* Исправление для карточек спорта */
-    .g-grive {
-        width: 100% !important; /* Было 509px */
-        margin: 0;
-        padding: 15px;
+    /* Главный экран */
+    .Omsk {
+        font-size: 70px;
+        margin-top: 90px;
+        margin-bottom: 10px;
     }
     
-    /* Исправление для блока спортивных комплексов */
-    .block-sports,
-    .block-sports2 {
-        width: 100% !important; /* Было 458px */
+    .title {
+        font-size: 22px;
+        margin-bottom: 10px;
     }
     
-    /* Исправление для карточек видов спорта */
-    .sport {
-        width: 100% !important; /* Было 458px */
+    .discription {
+        font-size: 14px;
     }
     
-    /* Исправление для карточек транспорта */
-    .info_tr {
-        padding: 15px 10px;
+    .right-section {
+        min-width: 100%;
     }
     
-    /* Исправление для иконок такси */
-    .taxi_information {
-        padding: 10px;
+    .blocks {
+        gap: 8px;
     }
     
-    /* Исправление для названий такси */
-    .name_taxi {
-        font-size: 20px;
+    .block {
+        width: 110px;
+        height: 85px;
+        padding: 8px;
     }
     
-    /* Исправление для wrapper контента */
-    .wrapper-contant {
-        padding: 0 10px;
+    .block1 {
+        width: 95px;
+        height: 85px;
+        padding: 8px;
     }
-}
-
-/* Для очень маленьких экранов (до 480px) */
-@media (max-width: 480px) {
-    /* Дополнительные исправления */
+    
+    .info {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    
+    .info1 {
+        font-size: 10px;
+    }
+    
+    .soob {
+        max-width: 260px;
+        height: 55px;
+    }
+    
+    .icons {
+        gap: 12px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+    
+    .tg, .vk {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .explore {
+        width: 180px;
+        height: 38px;
+        font-size: 14px;
+    }
+    
+    .svg {
+        width: 30px;
+        height: 35px;
+        margin-top: 18px;
+        margin-left: -25px;
+        background-size: contain;
+    }
+    
+    /* Секция истории */
+    .hero_blur {
+        min-height: 500px;
+    }
+    
     .block_black {
-        width: 92% !important;
-        top: 100vh;
+        width: 95% !important;
+        padding: 15px 12px;
+        min-height: 400px;
         margin-top: 30px;
+        border-radius: 20px;
     }
     
-    .text_info {
-        margin-top: 10px;
+    .ivan {
+        width: 90px;
+        height: 90px;
+        margin-top: -55px;
+        border-width: 1px;
     }
     
     .title_info {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.2;
     }
     
     .discription_info {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .icons_icon {
-        gap: 15px;
+        gap: 8px;
+        margin-top: 5px;
+    }
+    
+    .icons_info {
+        gap: 5px;
     }
     
     .icons_text {
-        font-size: 14px;
+        font-size: 11px;
     }
     
-    /* Исправление для карты */
+    .krep {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Достопримечательности */
+    .loc {
+        font-size: 20px;
+        margin: 20px 5px;
+    }
+    
+    .blue_block_container {
+        padding-left: 10px;
+        gap: 10px;
+    }
+    
+    .blue_block {
+        width: calc(100vw - 35px);
+        min-width: calc(100vw - 35px);
+        padding: 10px;
+    }
+    
+    .attractions {
+        height: 160px;
+    }
+    
+    .attractions_title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .star {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .attractions_discription {
+        font-size: 11px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+    
+    .attractions_icons {
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+    
+    .attractions_info {
+        gap: 4px;
+    }
+    
+    .attrac_icons {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .attractions_icons_text {
+        font-size: 9px;
+    }
+    
+    .button_blue, .button_white {
+        height: 38px;
+        font-size: 11px;
+        border-radius: 20px;
+    }
+    
+    /* Карта */
     .hero_blur_small {
-        min-height: 380px;
+        min-height: 280px;
+        margin-bottom: 20px;
     }
     
     .glass_block {
-        width: 92%;
-        height: 50px;
+        height: 35px;
+        margin-top: 10px;
     }
     
     .text_map {
-        font-size: 18px;
+        font-size: 14px;
     }
     
-    /* Исправление для навигации */
-    .nav a {
-        font-size: 24px;
-        margin: 15px 0;
-    }
-    
-    /* Исправление для секции фактов */
-    .fact-block {
-        width: 100%;
-    }
-    
-    .text_block_perple,
-    .text_block_white,
-    .text_block_perplelight,
-    .text_block_whitelight {
-        width: 100%;
-    }
-    
-    /* Исправление для секции новостей */
-    .new {
-        width: 100%;
-        padding: 10px;
-    }
-    
-    .new_photo {
-        height: 180px;
-    }
-    
-    .start_title {
-        font-size: 20px;
-    }
-    
-    /* Исправление для секции мероприятий */
-    .event {
-        width: 100%;
-        padding: 10px;
-    }
-    
-    .event_photo {
+    .map iframe {
         height: 200px;
     }
     
-    .block_perple,
-    .block_perple_border,
-    .buy_event {
-        width: 100%;
+    /* Факты */
+    .facts {
+        margin: 10px 5px 20px;
     }
     
-    /* Исправление для транспорта */
-    .g-grive .info_tr {
-        padding: 12px 8px;
+    .facts-line {
+        height: 30px;
+        width: 3px;
+        margin-right: 8px;
+        margin-top: 15px;
     }
     
-    .g-grive .name_transport {
+    .facts-title {
+        font-size: 20px;
+    }
+    
+    .facts-small {
+        font-size: 10px;
+    }
+    
+    .icon {
+        width: 16px;
+        height: 22px;
+    }
+    
+    .fact-block {
+        min-height: 160px;
+        padding: 8px;
+    }
+    
+    .text_block_perple,
+    .text_block_white {
+        height: 50px;
+        margin-top: 5px;
+    }
+    
+    .title_facts_white,
+    .title_facts_perple {
+        font-size: 14px;
+    }
+    
+    .text_block_perplelight,
+    .text_block_whitelight {
+        min-height: 70px;
+        font-size: 11px;
+        padding: 6px 8px;
+        margin-top: 5px;
+    }
+    
+    /* Новости */
+    .container_news {
+        gap: 12px;
+        padding: 0 5px;
+    }
+    
+    .new {
+        min-height: 360px;
+        padding: 8px;
+    }
+    
+    .new_photo {
+        height: 140px;
+    }
+    
+    .section_data {
+        margin: 5px 0;
+        gap: 6px;
+    }
+    
+    .calendary {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .data {
+        font-size: 10px;
+    }
+    
+    .start_text {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+    }
+    
+    .start_title {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    
+    .start_disccription {
+        font-size: 9px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+    
+    .block_grey {
+        max-width: 140px;
+        height: 22px;
+        bottom: 35px;
+        left: 8px;
+    }
+    
+    .place_info {
+        gap: 3px;
+        padding: 0 5px;
+    }
+    
+    .location {
+        width: 12px;
+        height: 12px;
+        margin-left: 3px;
+    }
+    
+    .address {
+        font-size: 9px;
+    }
+    
+    .button_read {
+        bottom: 35px;
+        right: 8px;
+    }
+    
+    .read {
+        width: 90px;
+        height: 30px;
+        font-size: 9px;
+        border-radius: 8px;
+    }
+    
+    /* Мероприятия */
+    .event {
+        min-height: 380px;
+        padding: 8px;
+    }
+    
+    .event_photo {
+        height: 180px;
+        margin-bottom: 5px;
+    }
+    
+    .up_info {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    
+    .section_money {
+        width: 70px;
+        height: 22px;
+        border-width: 1px;
+    }
+    
+    .money {
+        font-size: 7px;
+        margin-left: 2px;
+    }
+    
+    .money_buy {
+        font-size: 12px;
+    }
+    
+    .section_age {
+        width: 40px;
+        height: 32px;
         font-size: 16px;
+        border-radius: 8px;
     }
     
-    .g-grive .quantity {
+    .block_perple {
+        height: 35px;
+        margin-bottom: 6px;
+    }
+    
+    .name_event {
+        font-size: 14px;
+    }
+    
+    .block_perple_border {
+        min-height: 38px;
+        padding: 4px;
+        margin-bottom: 4px;
+    }
+    
+    .perple_place_info {
+        gap: 4px;
+        margin-left: 4px;
+    }
+    
+    .calendary_event,
+    .place_event {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .data_event {
+        font-size: 9px;
+    }
+    
+    .time_event {
+        font-size: 8px;
+    }
+    
+    .address_event {
+        font-size: 8px;
+    }
+    
+    .buy_event {
+        height: 35px;
+        margin-top: 6px;
+    }
+    
+    .buy {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .text_buy {
+        font-size: 11px;
+    }
+    
+    /* Спорт */
+    .new-line {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    .sports {
+        gap: 12px;
+        padding: 0 5px;
+    }
+    
+    .g-grive {
+        padding: 8px;
+    }
+    
+    .photo_g-drive {
+        height: 180px;
+    }
+    
+    .g {
+        font-size: 22px;
+        margin: 5px 0;
+    }
+    
+    .discription_drive {
+        font-size: 11px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .container-info {
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 6px;
+        height: 6px;
+        margin-right: 5px;
+    }
+    
+    .info_drive {
+        font-size: 11px;
+    }
+    
+    .matches {
+        height: 38px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    
+    .block-sports, .block-sports2 {
+        height: 80px;
+        font-size: 20px;
+        margin: 8px 0 12px;
+        line-height: 1.2;
+    }
+    
+    .sport {
+        min-height: 90px;
+        padding: 8px;
+    }
+    
+    .title_sport {
+        font-size: 14px;
+    }
+    
+    .discription_sport {
+        font-size: 10px;
+        line-height: 1.2;
+        margin-top: 5px;
+    }
+    
+    .block_perplelight_info,
+    .block_perple_info {
+        height: 140px;
+        padding: 12px;
+    }
+    
+    .title_rest {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .discription_rest {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    
+    .dot_green {
+        width: 8px;
+        height: 8px;
+        margin-right: 4px;
+    }
+    
+    .info_drive_rest {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    
+    /* Образование */
+    .education {
+        gap: 12px;
+        padding: 0 5px;
+    }
+    
+    .block_blue {
+        padding: 10px;
+    }
+    
+    .education_photo {
+        height: 180px;
+    }
+    
+    .education_title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .star_education {
+        width: 18px;
+        height: 15px;
+    }
+    
+    .stars_education {
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+    
+    .education_discription {
+        font-size: 11px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    
+    .container-info_dot {
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .info_drive span {
         font-size: 13px;
     }
     
-    .g-grive .quantity span {
+    .find_education {
+        height: 38px;
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .block_universities {
+        padding: 15px;
+    }
+    
+    .title_universities {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .universitets_info {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .circle {
+        width: 30px;
+        height: 30px;
         font-size: 16px;
     }
-}
-
-/* Исправление для горизонтального скролла */
-body {
-    overflow-x: hidden;
-    width: 100%;
-    position: relative;
-}
-
-/* Исправление для всех контейнеров */
-.wrapper,
-.wrapper-contant,
-.wrapper-footer,
-.blue_block_container,
-.sports,
-.education,
-.container_news {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Исправление для изображений */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Исправление для модальных окон на мобильных */
-@media (max-width: 768px) {
+    
+    .name_universitet {
+        font-size: 16px;
+    }
+    
+    .full_name {
+        font-size: 8px;
+    }
+    
+    .block_Scientific_achievements {
+        padding: 15px;
+    }
+    
+    .title_Scientific_achievements {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .discription_Scientific_achievements {
+        font-size: 11px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    
+    .container_numbers {
+        gap: 12px;
+    }
+    
+    .Scientific_number {
+        font-size: 20px;
+    }
+    
+    .info_Scientific p {
+        font-size: 9px;
+    }
+    
+    /* Транспорт */
+    .g-grive .photo_transport {
+        height: 180px;
+    }
+    
+    .tr {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    
+    .info_tr {
+        padding: 6px 8px;
+    }
+    
+    .name_transport {
+        font-size: 12px;
+    }
+    
+    .quantity {
+        font-size: 9px;
+    }
+    
+    .quantity span {
+        font-size: 14px;
+    }
+    
+    .line_tr {
+        width: 100%;
+    }
+    
+    .block-sports2 {
+        height: 80px;
+        font-size: 20px;
+    }
+    
+    .dot_greeen {
+        width: 6px;
+        height: 6px;
+        margin-right: 4px;
+    }
+    
+    .container-info_taxi {
+        gap: 8px;
+    }
+    
+    .circle_perple {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .yandex_photo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .name_taxi {
+        font-size: 14px;
+    }
+    
+    .taxi_description {
+        font-size: 8px;
+    }
+    
+    .taxi_information {
+        gap: 12px;
+        padding: 5px 8px;
+        margin-bottom: 10px;
+    }
+    
+    .price {
+        font-size: 8px;
+    }
+    
+    /* Футер */
+    footer {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: auto;
+        padding: 0 8px;
+    }
+    
+    .wrapper-footer {
+        gap: 15px;
+        padding: 15px 8px;
+    }
+    
+    .name_footer {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    
+    .discription_footer {
+        font-size: 10px;
+        line-height: 1.2;
+        max-width: 100%;
+    }
+    
+    .navigation_title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .navigation_container {
+        gap: 8px;
+    }
+    
+    .navigation_container a {
+        font-size: 12px;
+    }
+    
+    .nav_container {
+        gap: 10px;
+    }
+    
+    .tg_footer, .vk_footer {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .nav-con {
+        gap: 20px;
+    }
+    
+    /* Модальные окна */
     .modal__content {
+        padding: 1rem;
         width: 95%;
-        margin: 20px auto;
-        max-height: 80vh;
-        overflow-y: auto;
+    }
+    
+    .modal__title {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .schedule__item {
+        padding: 0.5rem 0;
+    }
+    
+    .schedule__day,
+    .schedule__hours {
+        font-size: 0.8rem;
     }
     
     .compact-map-container {
-        height: 300px;
+        height: 200px;
+    }
+    
+    .gallery-img {
+        border-radius: 6px;
     }
 }
-
