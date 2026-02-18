@@ -73,31 +73,3 @@ navLinks.forEach(link => {
 
 
 
-
-// Исправление для мобильных устройств - убираем лишние отступы справа
-function fixMobileSpacing() {
-    if (window.innerWidth <= 768) {
-        // Проверяем ширину body и document
-        const bodyWidth = document.body.offsetWidth;
-        const htmlWidth = document.documentElement.offsetWidth;
-        
-        // Если есть расхождения, принудительно выставляем правильную ширину
-        if (htmlWidth > bodyWidth) {
-            document.documentElement.style.width = '100%';
-            document.documentElement.style.overflowX = 'hidden';
-        }
-        
-        // Проверяем все элементы на выход за пределы
-        document.querySelectorAll('*').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.right > window.innerWidth + 5) { // с запасом 5px
-                el.style.maxWidth = '100%';
-                el.style.boxSizing = 'border-box';
-            }
-        });
-    }
-}
-
-// Запускаем при загрузке
-window.addEventListener('load', fixMobileSpacing);
-window.addEventListener('resize', fixMobileSpacing);
