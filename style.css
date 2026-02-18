@@ -4944,3 +4944,285 @@ footer {
 }
 
 
+
+/* Исправление для блоков с фиксированной шириной */
+@media (max-width: 768px) {
+    /* Исправление для блока истории */
+    .block_black {
+        width: 90% !important; /* Заменяем фиксированную ширину на относительную */
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        min-height: 500px;
+        padding: 20px 15px;
+        position: absolute;
+        top: 100vh;
+        margin-top: 50px; /* Уменьшаем отступ */
+    }
+    
+    /* Исправление для карты */
+    .hero_blur_small {
+        width: 100% !important; /* Было 1703px */
+        min-height: 450px;
+        margin: 0 auto 40px;
+        border-radius: 12px;
+    }
+    
+    /* Исправление для блока с иконками в истории */
+    .icons_icon {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    /* Исправление для текста в истории */
+    .text_info {
+        margin-top: 20px;
+    }
+    
+    /* Исправление для транспорта */
+    .line_tr {
+        width: 90% !important; /* Было 436px */
+        margin: 0 auto;
+    }
+    
+    /* Исправление для фотографий в спорт секции */
+    .photo_g-drive,
+    .photo_transport {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+    
+    /* Исправление для названия G-Drive */
+    .g {
+        font-size: 28px;
+    }
+    
+    /* Исправление для описания в спорт секции */
+    .discription_drive {
+        font-size: 16px;
+    }
+    
+    /* Исправление для кнопки матчей */
+    .matches {
+        width: 100% !important; /* Было 428px */
+    }
+    
+    /* Исправление для блока образования */
+    .block_blue {
+        width: 100% !important; /* Было 793px */
+        padding: 15px;
+    }
+    
+    /* Исправление для университетов */
+    .block_universities {
+        width: 100% !important; /* Было 795px */
+        padding: 20px;
+    }
+    
+    /* Исправление для линии в университетах */
+    .line {
+        width: 100% !important; /* Было 692.5px */
+    }
+    
+    /* Исправление для научных достижений */
+    .block_Scientific_achievements {
+        width: 100% !important; /* Было 795px */
+    }
+    
+    /* Исправление для отступов в контейнере спорта */
+    .sports {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    
+    /* Исправление для карточек спорта */
+    .g-grive {
+        width: 100% !important; /* Было 509px */
+        margin: 0;
+        padding: 15px;
+    }
+    
+    /* Исправление для блока спортивных комплексов */
+    .block-sports,
+    .block-sports2 {
+        width: 100% !important; /* Было 458px */
+    }
+    
+    /* Исправление для карточек видов спорта */
+    .sport {
+        width: 100% !important; /* Было 458px */
+    }
+    
+    /* Исправление для карточек транспорта */
+    .info_tr {
+        padding: 15px 10px;
+    }
+    
+    /* Исправление для иконок такси */
+    .taxi_information {
+        padding: 10px;
+    }
+    
+    /* Исправление для названий такси */
+    .name_taxi {
+        font-size: 20px;
+    }
+    
+    /* Исправление для wrapper контента */
+    .wrapper-contant {
+        padding: 0 10px;
+    }
+}
+
+/* Для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    /* Дополнительные исправления */
+    .block_black {
+        width: 92% !important;
+        top: 100vh;
+        margin-top: 30px;
+    }
+    
+    .text_info {
+        margin-top: 10px;
+    }
+    
+    .title_info {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .discription_info {
+        font-size: 14px;
+    }
+    
+    .icons_icon {
+        gap: 15px;
+    }
+    
+    .icons_text {
+        font-size: 14px;
+    }
+    
+    /* Исправление для карты */
+    .hero_blur_small {
+        min-height: 380px;
+    }
+    
+    .glass_block {
+        width: 92%;
+        height: 50px;
+    }
+    
+    .text_map {
+        font-size: 18px;
+    }
+    
+    /* Исправление для навигации */
+    .nav a {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+    
+    /* Исправление для секции фактов */
+    .fact-block {
+        width: 100%;
+    }
+    
+    .text_block_perple,
+    .text_block_white,
+    .text_block_perplelight,
+    .text_block_whitelight {
+        width: 100%;
+    }
+    
+    /* Исправление для секции новостей */
+    .new {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .new_photo {
+        height: 180px;
+    }
+    
+    .start_title {
+        font-size: 20px;
+    }
+    
+    /* Исправление для секции мероприятий */
+    .event {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .event_photo {
+        height: 200px;
+    }
+    
+    .block_perple,
+    .block_perple_border,
+    .buy_event {
+        width: 100%;
+    }
+    
+    /* Исправление для транспорта */
+    .g-grive .info_tr {
+        padding: 12px 8px;
+    }
+    
+    .g-grive .name_transport {
+        font-size: 16px;
+    }
+    
+    .g-grive .quantity {
+        font-size: 13px;
+    }
+    
+    .g-grive .quantity span {
+        font-size: 16px;
+    }
+}
+
+/* Исправление для горизонтального скролла */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Исправление для всех контейнеров */
+.wrapper,
+.wrapper-contant,
+.wrapper-footer,
+.blue_block_container,
+.sports,
+.education,
+.container_news {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Исправление для изображений */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Исправление для модальных окон на мобильных */
+@media (max-width: 768px) {
+    .modal__content {
+        width: 95%;
+        margin: 20px auto;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .compact-map-container {
+        height: 300px;
+    }
+}
+
