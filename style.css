@@ -1237,11 +1237,12 @@ margin-top: -50px;
 .start_title {
     font-size: 30px;
     margin-bottom: 10px;
+    max-width: 460px;
 }
 
 .start_disccription {
     font-size: 16px;
-    max-width: 470px;
+    max-width: 455px;
 }
 
 .button_read {
@@ -1524,7 +1525,9 @@ margin-top: -50px;
     cursor: pointer;
 
 }
-
+a{
+    text-decoration: none;
+}
 .sports{
     margin-left: 30px;
     display: flex;
@@ -1718,6 +1721,7 @@ margin-top: -50px;
 .full_name{
     color: #878787;
     font-size: 14px;
+    max-width: 600px;
 }
 .line{
     width: 692.5px;
@@ -1980,7 +1984,11 @@ footer {
     display: flex;
     gap: 15px;
 }
-/* ===== АДАПТАЦИЯ КАРТЫ ДОСТОПРИМЕЧАТЕЛЬНОСТЕЙ ===== */
+
+
+
+
+
 
 /* Планшеты (до 1200px) */
 @media (max-width: 1200px) {
@@ -2089,27 +2097,6 @@ footer {
         border-radius: 10px;
     }
 }
-
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .hero_blur_small {
-        min-height: 320px;
-        margin-bottom: 25px;
-    }
-    
-    .glass_block {
-        height: 45px;
-    }
-    
-    .text_map {
-        font-size: 18px;
-    }
-    
-    .map iframe {
-        height: 220px;
-    }
-}
-
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
     .hero_blur_small {
@@ -2285,55 +2272,6 @@ footer {
 }
 
 /* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .facts {
-        margin: 15px 10px;
-    }
-    
-    .facts-line {
-        height: 35px;
-        width: 4px;
-        margin-right: 10px;
-    }
-    
-    .facts-title {
-        font-size: 24px;
-    }
-    
-    .facts-small {
-        font-size: 12px;
-    }
-    
-    .fact-block {
-        min-height: 200px;
-        padding: 10px;
-    }
-    
-    .text_block_perple,
-    .text_block_white {
-        height: 60px;
-        margin-top: 6px;
-    }
-    
-    .text_block_perplelight,
-    .text_block_whitelight {
-        min-height: 85px;
-        font-size: 13px;
-        padding: 8px 10px;
-        margin-top: 6px;
-    }
-    
-    .title_facts_white,
-    .title_facts_perple {
-        font-size: 18px;
-    }
-    
-    .discription_facts_white,
-    .discription_facts_perple {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-}
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -2352,7 +2290,6 @@ footer {
         min-height: 80px;
     }
 }
-
 
 
 
@@ -2434,7 +2371,6 @@ footer {
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-radius: 12px;
     }
     
     .section_data {
@@ -2542,7 +2478,7 @@ footer {
     }
     
     .new {
-        height: 510px;
+        
         padding: 12px;
     }
     
@@ -2617,75 +2553,7 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .container_news {
-        gap: 15px;
-        padding: 0 10px;
-    }
-    
-    .new {
-        min-height: 420px;
-        padding: 10px;
-    }
-    
-    .new_photo {
-        height: 150px;
-    }
-    
-    .section_data {
-        margin: 8px 0;
-    }
-    
-    .calendary {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .data {
-        font-size: 12px;
-    }
-    
-    .start_text {
-        top: 12px;
-        left: 10px;
-        right: 10px;
-    }
-    
-    .start_title {
-        font-size: 18px;
-        margin-bottom: 6px;
-    }
-    
-    .start_disccription {
-        font-size: 12px;
-    }
-    
-    /* ГОРИЗОНТАЛЬНОЕ РАСПОЛОЖЕНИЕ для 360px */
-    .block_grey {
-        max-width: 180px;
-        height: 30px;
-        position: absolute;
-        bottom: 45px;
-        left: 10px;
-    }
-    
-    .address {
-        font-size: 12px;
-    }
-    
-    .button_read {
-        position: absolute;
-        bottom: 45px;
-        right: 10px;
-    }
-    
-    .read {
-        width: 110px;
-        height: 38px;
-        font-size: 11px;
-    }
-}
+
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -2747,7 +2615,7 @@ footer {
         width: 100%;
         height: 150px; /* Уменьшено с 200px */
         object-fit: cover;
-        border-radius: 15px;
+        
     }
     
     .up_info {
@@ -2847,7 +2715,6 @@ footer {
         width: 100%;
         height: 170px; /* Уменьшено с 200px */
         object-fit: cover;
-        border-radius: 12px;
         margin-bottom: 12px;
         position: relative;
     }
@@ -2867,7 +2734,6 @@ footer {
     .section_money {
         width: 100px;
         height: 30px;
-        margin: 0;
         background: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -3081,92 +2947,7 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .container_news {
-        gap: 12px;
-        padding: 0 8px;
-    }
-    
-    .event {
-        min-height: 450px;
-        padding: 8px;
-    }
-    
-    .event_photo {
-        height: 250px;
-    }
-    
-    .up_info {
-        top: 12px;
-        left: 12px;
-        right: 12px;
-    }
-    
-    .section_money {
-        width: 80px;
-        height: 26px;
-        border: 2px solid #B2DF00;
-    }
-    
-    .money_buy {
-        font-size: 15px;
-    }
-    
-    .section_age {
-        width: 38px;
-        height: 32px;
-        font-size: 16px;
-    }
-    
-    .block_perple {
-        height: 42px;
-    }
-    
-    .name_event {
-        font-size: 18px;
-    }
-    
-    .block_perple_border {
-        min-height: 48px;
-        padding: 5px;
-    }
-    
-    .perple_place_info {
-        gap: 6px;
-    }
-    
-    .calendary_event, .place_event {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .data_event {
-        font-size: 11px;
-    }
-    
-    .time_event {
-        font-size: 10px;
-    }
-    
-    .address_event {
-        font-size: 10px;
-    }
-    
-    .buy_event {
-        height: 42px;
-        margin-top: 8px;
-    }
-    
-    .buy {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .text_buy {
-        font-size: 14px;
-    }
-}
+
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -3478,7 +3259,7 @@ footer {
     }
     
     .block-sports, .block-sports2 {
-        height: 150px;
+        height: 200px;
         font-size: 30px;
     }
     
@@ -3518,74 +3299,6 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .sports {
-        gap: 15px;
-        padding: 0 10px;
-    }
-    
-    .g-grive {
-        padding: 10px;
-    }
-    
-    .photo_g-drive {
-        height: 150px;
-    }
-    
-    .g {
-        font-size: 22px;
-    }
-    
-    .discription_drive {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-    
-    .info_drive {
-        font-size: 14px;
-    }
-    
-    .matches {
-        height: 45px;
-        font-size: 15px;
-    }
-    
-    .block-sports, .block-sports2 {
-        height: 90px;
-        font-size: 22px;
-    }
-    
-    .sport {
-        min-height: 110px;
-        padding: 10px;
-    }
-    
-    .title_sport {
-        font-size: 16px;
-    }
-    
-    .discription_sport {
-        font-size: 12px;
-    }
-    
-    .block_perplelight_info, .block_perple_info {
-        height: 180px;
-        padding: 12px;
-    }
-    
-    .title_rest {
-        font-size: 24px;
-    }
-    
-    .discription_rest {
-        font-size: 14px;
-    }
-    
-    .info_drive_rest {
-        font-size: 14px;
-    }
-}
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -3607,7 +3320,7 @@ footer {
     }
     
     .block-sports, .block-sports2 {
-        height: 100px;
+        height: 200px;
         font-size: 24px;
     }
     
@@ -3644,7 +3357,6 @@ footer {
         height: 300px;
         object-fit: cover;
         margin-top: 10px;
-        border-radius: 15px;
     }
     
     .education_title {
@@ -3769,7 +3481,7 @@ footer {
         height: 250px;
         object-fit: cover;
         margin-top: 0;
-        border-radius: 15px;
+
     }
     
     .education_title {
@@ -3937,7 +3649,7 @@ footer {
     }
     
     .g-grive .info_tr {
-        padding: 10px 12px;
+        padding: 10px 1px;
     }
     
     .g-grive .name_transport {
@@ -4033,112 +3745,7 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .education {
-        gap: 15px;
-        padding: 0 10px;
-    }
-    
-    .block_blue {
-        padding: 12px;
-    }
-    
-    .education_photo {
-        height: 160px;
-    }
-    
-    .education_title {
-        font-size: 22px;
-    }
-    
-    .star_education {
-        width: 20px;
-        height: 18px;
-    }
-    
-    .education_discription {
-        font-size: 14px;
-    }
-    
-    .info_drive {
-        font-size: 14px;
-    }
-    
-    .info_drive span {
-        font-size: 16px;
-    }
-    
-    .find_education {
-        height: 45px;
-        font-size: 15px;
-    }
-    
-    .block_universities {
-        padding: 15px;
-    }
-    
-    .title_universities {
-        font-size: 24px;
-    }
-    
-    .universitets_info {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
-    .circle {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-    
-    .name_universitet {
-        font-size: 18px;
-    }
-    
-    .full_name {
-        font-size: 10px;
-    }
-    
-    .block_Scientific_achievements {
-        padding: 15px;
-    }
-    
-    .title_Scientific_achievements {
-        font-size: 22px;
-    }
-    
-    .discription_Scientific_achievements {
-        font-size: 14px;
-    }
-    
-    .container_numbers {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-    
-    .info_Scientific {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 15px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-    }
-    
-    .Scientific_number {
-        font-size: 24px;
-        margin-bottom: 0;
-    }
-    
-    .info_Scientific p {
-        font-size: 14px;
-        margin: 0;
-    }
-}
+
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -4346,35 +3953,6 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .wrapper-footer {
-        gap: 20px;
-        padding: 20px 10px;
-    }
-    
-    .name_footer {
-        font-size: 36px;
-    }
-    
-    .discription_footer {
-        font-size: 13px;
-    }
-    
-    .navigation_title {
-        font-size: 24px;
-        margin-bottom: 12px;
-    }
-    
-    .navigation_container a {
-        font-size: 14px;
-    }
-    
-    .tg_footer, .vk_footer {
-        width: 40px;
-        height: 40px;
-    }
-}
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -4815,88 +4393,6 @@ footer {
     }
 }
 
-/* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .hero {
-        min-height: 500px;
-    }
-    
-    .header {
-        height: 55px;
-        border-radius: 50px; /* Оставляем как было */
-    }
-    
-    .logo {
-        width: 60px;
-        height: 30px;
-    }
-    
-    .nav a {
-        font-size: 11px;
-        margin: 0 3px;
-    }
-    
-    .tem {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .Omsk {
-        font-size: 60px;
-        margin-top: 70px;
-    }
-    
-    .title {
-        font-size: 22px;
-    }
-    
-    .discription {
-        font-size: 14px;
-    }
-    
-    .blocks {
-        gap: 10px;
-    }
-    
-    .block {
-        width: 115px;
-        height: 90px;
-        border-radius: 50px; /* Оставляем как было */
-    }
-    
-    .block1 {
-        width: 100px;
-        height: 90px;
-        border-radius: 50px; /* Оставляем как было */
-    }
-    
-    .info {
-        font-size: 22px;
-    }
-    
-    .info1 {
-        font-size: 11px;
-    }
-    
-    .soob {
-        max-width: 260px;
-        height: 60px;
-    }
-    
-    .explore {
-        width: 200px;
-        height: 42px;
-        font-size: 15px;
-        border-radius: 30px; /* Оставляем как было */
-    }
-    
-    .svg {
-        width: 39px; /* Оставляем как было */
-        height: 50px; /* Оставляем как было */
-        margin-top: 18px;
-        margin-left: -30px;
-    }
-}
 
 /* Альбомная ориентация на мобильных */
 @media (max-width: 900px) and (orientation: landscape) {
@@ -4963,19 +4459,20 @@ footer {
     .header {
         width: 95%;
         height: 55px;
-        padding: 5px 10px;
+        padding: 5px 5px;
         top: 10px;
     }
     
     .logo {
-        width: 60px;
-        height: 30px;
+        width: 70px;
+        height: 40px;
+        margin-top: 10px;
     }
     
     .burger-menu {
         width: 30px;
         height: 30px;
-        left: 45%;
+        left: 50%;
     }
     
     .burger-line {
@@ -5001,24 +4498,24 @@ footer {
     }
     
     .tem {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
     
     /* Главный экран */
     .Omsk {
-        font-size: 70px;
+        font-size: 95px;
         margin-top: 90px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     .title {
-        font-size: 22px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
     
     .discription {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .right-section {
@@ -5030,7 +4527,7 @@ footer {
     }
     
     .block {
-        width: 110px;
+        width: 135px;
         height: 85px;
         padding: 8px;
     }
@@ -5042,41 +4539,45 @@ footer {
     }
     
     .info {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 3px;
     }
     
     .info1 {
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .soob {
-        max-width: 260px;
-        height: 55px;
+        max-width: 300px;
+        height: 65px;
+        background-size: contain; 
+        margin-left: 30px;
+        
+        
     }
     
     .icons {
         gap: 12px;
-        margin-top: -30px;
+        margin-top: -50px;
         margin-bottom: 20px;
     }
     
     .tg, .vk {
-        width: 45px;
-        height: 45px;
+        width: 60px;
+        height: 60px;
     }
     
     .explore {
-        width: 180px;
-        height: 38px;
-        font-size: 14px;
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
     }
     
     .svg {
         width: 30px;
         height: 35px;
         margin-top: 18px;
-        margin-left: -25px;
+        margin-left: -14px;
         background-size: contain;
     }
     
@@ -5086,17 +4587,17 @@ footer {
     }
     
     .block_black {
-        width: 95% !important;
+        width: 95% ;
         padding: 15px 12px;
         min-height: 400px;
-        margin-top: 30px;
+        margin-top: 150px;
         border-radius: 20px;
     }
     
     .ivan {
-        width: 90px;
-        height: 90px;
-        margin-top: -55px;
+        width: 120px;
+        height: 120px;
+        margin-top: -65px;
         border-width: 1px;
     }
     
@@ -5129,7 +4630,7 @@ footer {
     
     /* Достопримечательности */
     .loc {
-        font-size: 20px;
+        font-size: 15px;
         margin: 20px 5px;
     }
     
@@ -5145,12 +4646,16 @@ footer {
     }
     
     .attractions {
-        height: 160px;
+        height: 200px;
     }
     
     .attractions_title {
         font-size: 18px;
         margin-bottom: 5px;
+    }
+
+    .att{
+         font-size: 10px;
     }
     
     .star {
@@ -5263,26 +4768,28 @@ footer {
     }
     
     .new {
-        min-height: 360px;
+        min-height: 300px;
         padding: 8px;
+        height: 400px;
     }
     
     .new_photo {
-        height: 140px;
+        height: 200px;
+        margin-bottom: 0;
     }
     
     .section_data {
-        margin: 5px 0;
-        gap: 6px;
+        margin: 7px 5px;
+        gap: 8px;
     }
     
     .calendary {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
     }
     
     .data {
-        font-size: 10px;
+        font-size: 13px;
     }
     
     .start_text {
@@ -5292,48 +4799,47 @@ footer {
     }
     
     .start_title {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 3px;
     }
     
     .start_disccription {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 1.2;
         margin-bottom: 5px;
     }
     
     .block_grey {
-        max-width: 140px;
+        max-width: 170px;
         height: 22px;
-        bottom: 35px;
-        left: 8px;
+        left: 35px;
     }
     
     .place_info {
         gap: 3px;
-        padding: 0 5px;
+        
     }
     
     .location {
         width: 12px;
         height: 12px;
-        margin-left: 3px;
+        
     }
     
     .address {
-        font-size: 9px;
+        font-size: 10px;
     }
     
     .button_read {
-        bottom: 35px;
-        right: 8px;
+        right: 5px;
     }
     
     .read {
-        width: 90px;
+        width: 110px;
         height: 30px;
-        font-size: 9px;
+        font-size: 10px;
         border-radius: 8px;
+        letter-spacing: 0.5px;
     }
     
     /* Мероприятия */
@@ -5356,23 +4862,28 @@ footer {
     .section_money {
         width: 70px;
         height: 22px;
-        border-width: 1px;
+        margin-top: -3px;
+        margin-left: -1px;
+        
     }
     
     .money {
         font-size: 7px;
         margin-left: 2px;
+        margin-top: 15px !important;
     }
     
     .money_buy {
-        font-size: 12px;
+        font-size: 16px !important;
     }
     
     .section_age {
-        width: 40px;
-        height: 32px;
+        width: 50px;
+        height: 50px;
         font-size: 16px;
         border-radius: 8px;
+        margin-top: -18px;
+         margin-right: 7px;
     }
     
     .block_perple {
@@ -5447,14 +4958,14 @@ footer {
     }
     
     .g {
-        font-size: 22px;
+        font-size: 27px;
         margin: 5px 0;
     }
     
     .discription_drive {
-        font-size: 11px;
+        font-size: 15px;
         line-height: 1.2;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         margin-top: 0;
     }
     
@@ -5469,7 +4980,7 @@ footer {
     }
     
     .info_drive {
-        font-size: 11px;
+        font-size: 14px;
     }
     
     .matches {
@@ -5479,10 +4990,10 @@ footer {
     }
     
     .block-sports, .block-sports2 {
-        height: 80px;
+        height: 100px;
         font-size: 20px;
         margin: 8px 0 12px;
-        line-height: 1.2;
+        line-height: 33px;
     }
     
     .sport {
@@ -5491,11 +5002,11 @@ footer {
     }
     
     .title_sport {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .discription_sport {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.2;
         margin-top: 5px;
     }
@@ -5505,10 +5016,10 @@ footer {
         height: 140px;
         padding: 12px;
     }
-    
+
     .title_rest {
-        font-size: 20px;
-        margin-bottom: 5px;
+        font-size: 25px;
+        margin-bottom: 10px;
     }
     
     .discription_rest {
@@ -5517,13 +5028,13 @@ footer {
     }
     
     .dot_green {
-        width: 8px;
-        height: 8px;
-        margin-right: 4px;
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
     }
     
     .info_drive_rest {
-        font-size: 11px;
+        font-size: 15px;
         line-height: 1.2;
     }
     
@@ -5542,7 +5053,7 @@ footer {
     }
     
     .education_title {
-        font-size: 18px;
+        font-size: 19px;
         margin-bottom: 8px;
     }
     
@@ -5557,7 +5068,7 @@ footer {
     }
     
     .education_discription {
-        font-size: 11px;
+        font-size: 13px;
         line-height: 1.3;
         margin-bottom: 10px;
     }
@@ -5579,10 +5090,11 @@ footer {
     
     .block_universities {
         padding: 15px;
+        width: 100%;
     }
     
     .title_universities {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 12px;
     }
     
@@ -5592,17 +5104,17 @@ footer {
     }
     
     .circle {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
     
     .name_universitet {
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .full_name {
-        font-size: 8px;
+        font-size: 12px;
     }
     
     .block_Scientific_achievements {
@@ -5610,26 +5122,26 @@ footer {
     }
     
     .title_Scientific_achievements {
-        font-size: 18px;
-        margin-bottom: 8px;
+        font-size: 19px;
+        
     }
     
     .discription_Scientific_achievements {
-        font-size: 11px;
+        font-size: 14px;
         line-height: 1.3;
         margin-bottom: 10px;
     }
-    
+   
     .container_numbers {
         gap: 12px;
     }
     
     .Scientific_number {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .info_Scientific p {
-        font-size: 9px;
+        font-size: 13px;
     }
     
     /* Транспорт */
@@ -5643,7 +5155,8 @@ footer {
     }
     
     .info_tr {
-        padding: 6px 8px;
+        padding: 7px 8px;
+
     }
     
     .name_transport {
@@ -5651,11 +5164,11 @@ footer {
     }
     
     .quantity {
-        font-size: 9px;
+        font-size: 1px;
     }
     
     .quantity span {
-        font-size: 14px;
+        font-size: 1px;
     }
     
     .line_tr {
@@ -5663,7 +5176,7 @@ footer {
     }
     
     .block-sports2 {
-        height: 80px;
+        height: 100px;
         font-size: 20px;
     }
     
@@ -5680,11 +5193,13 @@ footer {
     .circle_perple {
         width: 32px;
         height: 32px;
+       
     }
     
     .yandex_photo {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
+        
     }
     
     .name_taxi {
@@ -5702,7 +5217,7 @@ footer {
     }
     
     .price {
-        font-size: 8px;
+        font-size: 9px;
     }
     
     /* Футер */
@@ -5719,27 +5234,27 @@ footer {
     }
     
     .name_footer {
-        font-size: 28px;
+        font-size: 50px;
         margin-bottom: 8px;
     }
     
     .discription_footer {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 1.2;
         max-width: 100%;
     }
     
     .navigation_title {
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 10px;
     }
     
     .navigation_container {
-        gap: 8px;
+        gap: 15px;
     }
     
     .navigation_container a {
-        font-size: 12px;
+        font-size: 17px;
     }
     
     .nav_container {
@@ -5747,8 +5262,8 @@ footer {
     }
     
     .tg_footer, .vk_footer {
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
     
     .nav-con {
@@ -5757,7 +5272,6 @@ footer {
     
     /* Модальные окна */
     .modal__content {
-        padding: 1rem;
         width: 95%;
     }
     
@@ -5783,3 +5297,506 @@ footer {
         border-radius: 6px;
     }
 }
+
+
+/* ===== АДАПТАЦИЯ СЕКЦИИ МЕРОПРИЯТИЯ ===== */
+
+/* Планшеты (до 768px) */
+@media (max-width: 768px) {
+    .container_news .event {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 15px;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .event .event_photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        
+        margin-bottom: 15px;
+        position: relative;
+        display: block;
+    }
+    
+    .event .up_info {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        right: 25px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+    
+    .event .section_money {
+        width: 100px;
+        height: 32px;
+        border: 2px solid #B2DF00;
+        background: transparent;
+        backdrop-filter: none;
+        
+    }
+    
+    .event .money {
+        font-size: 10px;
+        color: white;
+        margin-top: 0;
+    }
+    
+    .event .money_buy {
+        font-size: 16px;
+        color: white;
+    }
+    
+    .event .block_age {
+        margin: 0;
+    }
+    
+    .event .section_age {
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+        background-color: #B2DF00;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .event .block_perple {
+        width: 100%;
+        height: 50px;
+        background-color: #816EBA;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 12px 0;
+    }
+    
+    .event .name_event {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .event .block_perple_border {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        border: 2px solid #816ebaa7;
+        border-radius: 12px;
+        margin: 0 0 10px 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .event .perple_place_info {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .event .calendary_event,
+    .event .place_event {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+    
+    .event .event_info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    .event .data_event {
+        font-size: 14px;
+        color: #000000;
+    }
+    
+    .event .time_event {
+        font-size: 13px;
+        color: #939393;
+    }
+    
+    .event .address_event {
+        font-size: 13px;
+        color: #000000;
+        word-break: break-word;
+        max-width: calc(100% - 40px);
+    }
+    
+    .event .buy_event {
+        width: 100%;
+        height: 50px;
+        background-color: #B2DF00;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0 0 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .event .info_buy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .event .buy {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .event .text_buy {
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+/* Смартфоны (до 400px) */
+@media (max-width: 400px) {
+    .container_news .event {
+        padding: 12px;
+    }
+    
+    .event .event_photo {
+        height: 180px;
+        margin-bottom: 12px;
+    }
+    
+    .event .up_info {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+    
+    .event .section_money {
+        width: 85px;
+        height: 28px;
+        border-width: 1.5px;
+    }
+    
+    .event .money {
+        font-size: 8px;
+    }
+    
+    .event .money_buy {
+        font-size: 14px;
+    }
+    
+    .event .section_age {
+        width: 45px;
+        height: 35px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    
+    .event .block_perple {
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    
+    .event .name_event {
+        font-size: 18px;
+    }
+    
+    .event .block_perple_border {
+        min-height: 55px;
+        margin-bottom: 8px;
+    }
+    
+    .event .perple_place_info {
+        margin-left: 12px;
+        gap: 12px;
+    }
+    
+    .event .calendary_event,
+    .event .place_event {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .event .data_event {
+        font-size: 12px;
+    }
+    
+    .event .time_event {
+        font-size: 11px;
+    }
+    
+    .event .address_event {
+        font-size: 11px;
+        max-width: calc(100% - 35px);
+    }
+    
+    .event .buy_event {
+        height: 45px;
+        margin-top: 5px;
+    }
+    
+    .event .buy {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .event .text_buy {
+        font-size: 14px;
+    }
+}
+
+
+/* ===== АДАПТАЦИЯ ДЛЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЕЙ ===== */
+
+/* Планшеты (до 768px) */
+@media (max-width: 768px) {
+    .blue_block_container {
+        padding: 0;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 30px;
+        scroll-snap-stop: always;
+        padding-left: 20px;
+    }
+    
+    .blue_block {
+        width: calc(100vw - 60px);
+        min-width: calc(100vw - 60px);
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 20px;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        border: 2px solid #5281FF;
+    }
+    
+    .blue_block:last-child {
+        margin-right: 20px;
+    }
+    
+    .attractions_content {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .attractions {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        margin: 0;
+        border-radius: 10px;
+    }
+    
+    .attractions_text_block {
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    
+    .attractions_title {
+        font-size: 26px;
+        max-width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .stars {
+        margin-bottom: 10px;
+    }
+    
+    .star {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .attractions_discription {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    .attractions_icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .attractions_info {
+        gap: 10px;
+    }
+    
+    .attrac_icons {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .attractions_icons_text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .button_container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: auto;
+        width: 100%;
+    }
+    
+    .button_blue, .button_white {
+        width: 100%;
+        height: 55px;
+        margin-top: 0;
+        font-size: 16px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .time {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    /* Скрываем скроллбар */
+    .blue_block_container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .blue_block_container {
+        scrollbar-width: none;
+    }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+    .blue_block_container {
+        padding-left: 15px;
+    }
+    
+    .blue_block {
+        width: calc(100vw - 45px);
+        min-width: calc(100vw - 45px);
+        padding: 15px;
+    }
+    
+    .blue_block:last-child {
+        margin-right: 15px;
+    }
+    
+    .attractions {
+        height: 200px;
+    }
+    
+    .attractions_title {
+        font-size: 22px;
+    }
+    
+    .attractions_icons {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .attractions_icons_text {
+        font-size: 13px;
+    }
+    
+    .button_blue, .button_white {
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+/* Смартфоны (до 400px) */
+@media (max-width: 400px) {
+    .blue_block {
+        padding: 12px;
+    }
+    
+    
+    .attractions_title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .star {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .attractions_discription {
+        font-size: 11px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    
+    .attractions_icons {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .attractions_info {
+        gap: 6px;
+    }
+    
+    .attrac_icons {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .attractions_icons_text {
+        font-size: 10px;
+    }
+    
+    .button_container {
+        gap: 8px;
+    }
+    
+    .button_blue, .button_white {
+        height: 42px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    
+    .time {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+
+
