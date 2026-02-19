@@ -41,19 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    // Синие кнопки - добавляем обработчик
+    // Синие кнопки
     document.querySelectorAll('.button_blue').forEach((btn, i) => {
         btn.onclick = (e) => {
             e.preventDefault();
             
-            // Проверяем текст кнопки или индекс, чтобы понять, какая это кнопка
+            // Только для кнопки "маршрут прогулки" (третья синяя кнопка)
             if (btn.textContent.includes('маршрут') || i === 2) {
-                // Кнопка "маршрут прогулки" (третья синяя кнопка)
                 toggleModal(route, true);
-            } else {
-                // Другие синие кнопки (например, "записаться на экскурсию", "афиша спектаклей")
-                alert('Функция будет доступна позже');
             }
+            // Остальные синие кнопки просто ничего не делают (или можно убрать вообще)
         };
     });
 
@@ -94,3 +91,27 @@ navLinks.forEach(link => {
         document.body.style.overflow = '';
     });
 });
+
+// Переключение темной темы
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Проверяем сохраненную тему при загрузке
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    body.classList.add('dark-theme');
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        // Переключаем класс
+        body.classList.toggle('dark-theme');
+        
+        // Сохраняем выбор пользователя
+        if (body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
