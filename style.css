@@ -5813,6 +5813,53 @@ footer {
         height: 32px;
     }
     
+    /* Исправление для блока истории */
+    .block_black {
+        width: 92%;
+        padding: 15px 12px;
+        min-height: 380px;
+        margin-top: 80px;
+        border-radius: 25px;
+        position: absolute;
+        top: 100vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .ivan {
+        width: 100px;
+        height: 100px;
+        margin-top: -60px;
+        margin-bottom: 10px;
+    }
+    
+    .title_info {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    
+    .discription_info {
+        font-size: 11px;
+    }
+    
+    .icons_icon {
+        gap: 5px;
+        margin-top: 0;
+    }
+    
+    .icons_info {
+        gap: 3px;
+    }
+    
+    .icons_text {
+        font-size: 10px;
+    }
+    
+    .krep {
+        width: 16px;
+        height: 16px;
+    }
+    
     /* Блок университетов */
     .block_universities {
         padding: 12px;
@@ -5893,45 +5940,17 @@ footer {
         font-size: 11px;
     }
     .block_grey{
-        left: 20px;
+        left: 30px;
     }
 
 
     .button_read{
-         left: 200px;
+         bottom: 3px;
     }
 
     .new{
-        height: 390px;
+        height: 395px;
     }
-}
-
-
-@media (max-width: 365px) {
-
-    .start_title{
-        font-size: 16px;
-    }
-    .start_disccription{
-        font-size: 10px;
-    }
-    .block_grey{
-        left: 15px;
-    }
-
-
-    .button_read{
-         left: 190px;
-    }
-    .read{
-        width: 105px;
-        height: 30px;
-        font-size: 9px;
-    }
-    .new{
-        height: 385px;
-    }
-
 }
 
 
