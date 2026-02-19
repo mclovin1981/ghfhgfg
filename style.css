@@ -5954,3 +5954,15 @@ footer {
 }
 
 
+
+@media (max-width: 360px) {
+    .block_grey{
+        left: 20px;
+    }
+
+    .button_read{
+        right: 0.1px;
+    }
+}
+
+
