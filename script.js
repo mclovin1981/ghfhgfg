@@ -33,13 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    // Синие кнопки
-    document.querySelectorAll('.button_blue').forEach((btn, i) => {
-        btn.onclick = (e) => {
-            e.preventDefault();
-            i === 2 ? toggleModal(route, true) : alert('Функция будет доступна позже');
-        };
-    });
+    
 
     // Закрытие модалок
     document.querySelectorAll('.modal').forEach(m => {
@@ -68,8 +62,4 @@ navLinks.forEach(link => {
         nav.classList.remove('active');
         document.body.style.overflow = '';
     });
-
 });
-
-
-
