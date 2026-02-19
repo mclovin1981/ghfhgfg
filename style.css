@@ -21,6 +21,7 @@ body{
     padding: 0;
     width: 100%;
     overflow-x: hidden; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero {
@@ -205,6 +206,145 @@ html {
     background-size: contain;
     cursor: pointer;
 }
+.tem_b{
+    border: 0;
+    border-radius: 50px;
+}
+/* ===== ТЕМНАЯ ТЕМА ===== */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Темная тема для блоков с белым фоном */
+body.dark-theme .block,
+body.dark-theme .block1 {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+body.dark-theme .info,
+body.dark-theme .info1 {
+    color: #ffffff;
+}
+
+/* Темная тема для достопримечательностей */
+body.dark-theme .blue_block {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .attractions_title,
+body.dark-theme .attractions_discription,
+body.dark-theme .attractions_icons_text {
+    color: #ffffff;
+}
+
+/* Темная тема для модальных окон (они должны оставаться светлыми) */
+body.dark-theme .modal__content {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Темная тема для фактов */
+body.dark-theme .fact-block {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .text_block_white,
+body.dark-theme .text_block_whitelight {
+    border-color: #4a4a4a;
+    color: #ffffff;
+}
+
+body.dark-theme .text_block_perplelight,
+body.dark-theme .text_block_whitelight {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+/* Темная тема для новостей */
+body.dark-theme .new {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .data,
+body.dark-theme .address {
+    color: #ffffff;
+}
+
+body.dark-theme .block_grey {
+    background-color: #3d3d3d;
+}
+
+body.dark-theme .address {
+    color: #cccccc;
+}
+
+/* Темная тема для мероприятий */
+body.dark-theme .event {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .data_event,
+body.dark-theme .address_event {
+    color: #ffffff;
+}
+
+body.dark-theme .time_event {
+    color: #cccccc;
+}
+
+/* Темная тема для спорта */
+body.dark-theme .g-grive {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .discription_drive,
+body.dark-theme .info_drive,
+body.dark-theme .discription_sport,
+body.dark-theme .info_drive_rest {
+    color: #ffffff;
+}
+
+/* Темная тема для образования */
+body.dark-theme .block_blue,
+body.dark-theme .block_universities,
+body.dark-theme .block_Scientific_achievements {
+    border-color: #4a4a4a;
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .education_discription,
+body.dark-theme .name_universitet,
+body.dark-theme .full_name {
+    color: #ffffff;
+}
+
+/* Темная тема для транспорта */
+body.dark-theme .name_transport,
+body.dark-theme .name_taxi {
+    color: #ffffff;
+}
+
+body.dark-theme .taxi_description {
+    color: #cccccc;
+}
+
+/* Иконки темы */
+body.dark-theme .tem {
+    background-image: url('sun\(1\).svg'); /* Путь к иконке солнца */
+}
+
+body:not(.dark-theme) .tem {
+    background-image: url('tem.svg'); /* Путь к иконке луны */
+}
+
+
 
 .Omsk{
     font-family: 'Widock Trial';
@@ -5953,8 +6093,6 @@ footer {
     }
 }
 
-
-
 @media (max-width: 360px) {
     .block_grey{
         left: 20px;
@@ -5964,5 +6102,3 @@ footer {
         right: 0.1px;
     }
 }
-
-
